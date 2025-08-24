@@ -89,6 +89,11 @@
 	margin:0 0 2rem 0;
 }
 
+h1.chennai-text {
+	font-family: "FFF Forward", sans-serif;
+	font-size: 2rem;
+}
+
 /* Base Typography Settings
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Base size - 16px browser default */
@@ -114,7 +119,6 @@
 .avatar {
 	width: 8rem;             /* 128px */
 	height: 8rem;
-	border-radius: 50%;
 	object-fit: cover;
 	background-position: center;
 	margin-bottom: var(--spacing-l);
@@ -235,12 +239,18 @@ a:hover {
 
   /* Modifier for rounded avatar */
   .avatar--rounded {
-	border-radius: 50%;
+	border-radius: 4px;
   }
 
   /* Modifier for slightly rounded corners */
   .avatar--soft {
 	border-radius: 0.5rem;   /* 8px rounded corners */
+  }
+
+  :root.theme-dark {
+	.avatar {
+		border: 1px solid white
+	}
   }
 
 /* Theme System
@@ -348,6 +358,13 @@ ul li {
 
 /* Font Face Definitions
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  @font-face {
+	font-display:swap;
+	font-family: 'FFF Forward';
+	src: url('../fonts/fff-forward.regular-webfont.woff2') format('woff2')
+  }
+
 @font-face {
 	font-display:swap;
 	font-family:'Open Sans';
