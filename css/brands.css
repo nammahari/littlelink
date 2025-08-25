@@ -631,3 +631,20 @@
 	--button-background:#0B5CFF;
   --button-border:1px solid #FFFFFF;
 }
+
+.button-tamilnadu-tech {
+	--button-background: #ffffff;
+	--button-text: #000000;
+	--button-border: 1px solid black;
+}
+
+.button-wiki-tn-tech {
+	--button-background: #ffffff;
+	--button-text: #000000;
+	--button-border: 1px solid black;
+}
+
+.button-forklore {
+	--button-background: #18222A;
+	--button-text: #ffffff;
+}
